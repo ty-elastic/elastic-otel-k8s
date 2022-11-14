@@ -1,0 +1,16 @@
+--- elastic-defend.yaml	2022-11-14 05:37:14.000000000 -0600
++++ elastic-defend-diff.yaml	2022-11-14 05:36:32.000000000 -0600
+@@ -92,10 +92,10 @@
+             runAsUser: 0
+           resources:
+             limits:
+-              memory: 500Mi
++              memory: 1Gi
+             requests:
+-              cpu: 100m
+-              memory: 200Mi
++              cpu: 256m
++              memory: 512Mi
+           volumeMounts:
+             - name: proc
+               mountPath: /hostfs/proc
